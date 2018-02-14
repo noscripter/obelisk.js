@@ -5,7 +5,7 @@
   "main": "./nodeshim/obelisk-nodeshim.js",
   "browser": "./build/obelisk.js",
   "dependencies": {
-    "grunt": "~0.4.1",
+    "grunt": "~1.0.0",
     "browserify-shim": "^3.4.1"
   },
   "devDependencies": {
@@ -20,7 +20,9 @@
     "start": ""
   },
   "browserify": {
-    "transform": [ "browserify-shim" ]
+    "transform": [
+      "browserify-shim"
+    ]
   },
   "browserify-shim": {
     "./build/obelisk.js": "obelisk"
